@@ -1,0 +1,541 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Assign Partner list renders as expected 1`] = `
+<div
+  className="container"
+  style={
+    Object {
+      "padding": 20,
+    }
+  }
+>
+  <div>
+    <button
+      className="btn btn-dark"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Assign
+    </button>
+  </div>
+  <div
+    style={
+      Object {
+        "paddingTop": 10,
+      }
+    }
+  >
+    <div
+      className="fade alert alert-info show"
+      role="alert"
+    >
+      Staffs not allocated to a partner
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Main Page renders as expected 1`] = `
+<div>
+  <div
+    className="container"
+  >
+    <h1>
+      Secret Santa
+    </h1>
+    <nav
+      className="nav nav-tabs"
+      onKeyDown={[Function]}
+      role="tablist"
+    >
+      <a
+        aria-controls={null}
+        aria-selected={true}
+        className="nav-item nav-link active"
+        data-rb-event-key="list"
+        href="#"
+        id={null}
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="tab"
+      >
+        Participation
+      </a>
+      <a
+        aria-controls={null}
+        aria-disabled={true}
+        aria-selected={false}
+        className="nav-item nav-link disabled"
+        data-rb-event-key="draw"
+        href="#"
+        id={null}
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="tab"
+        tabIndex={-1}
+      >
+        Gift Partner
+      </a>
+    </nav>
+    <div
+      className="tab-content"
+    >
+      <div
+        aria-hidden={false}
+        aria-labelledby={null}
+        className="tab-pane active"
+        id={null}
+        role="tabpanel"
+        style={
+          Object {
+            "padding": 30,
+          }
+        }
+      >
+        <div
+          className="card bg-secondary text-white"
+        >
+          <div
+            className="card-body"
+          >
+            <form
+              className=""
+              style={
+                Object {
+                  "padding": 20,
+                }
+              }
+            >
+              <div
+                className="form-row"
+              >
+                <div
+                  className="form-group col"
+                >
+                  <input
+                    className="form-control form-control-lg"
+                    id="formGridName"
+                    name="staffName"
+                    onChange={[Function]}
+                    placeholder="Enter Name"
+                    type="input"
+                    value=""
+                  />
+                </div>
+                <div
+                  className="form-group col"
+                >
+                  <input
+                    className="form-control form-control-lg"
+                    id="formGridEmail"
+                    name="emailAdd"
+                    onChange={[Function]}
+                    placeholder="Email"
+                    type="email"
+                    value=""
+                  />
+                </div>
+              </div>
+              <button
+                className="btn btn-dark btn-block btn-lg"
+                disabled={false}
+                onClick={[Function]}
+                type="submit"
+              >
+                Add
+              </button>
+            </form>
+          </div>
+        </div>
+        <div
+          style={
+            Object {
+              "paddingTop": 50,
+            }
+          }
+        />
+        <div
+          className="fade alert alert-info show"
+          role="alert"
+        >
+          No staffs added yet
+        </div>
+      </div>
+      <div
+        aria-hidden={true}
+        aria-labelledby={null}
+        className="tab-pane"
+        id={null}
+        role="tabpanel"
+      >
+        <div
+          className="container"
+          style={
+            Object {
+              "padding": 20,
+            }
+          }
+        >
+          <div>
+            <button
+              className="btn btn-dark"
+              disabled={false}
+              onClick={[Function]}
+              type="button"
+            >
+              Assign
+            </button>
+          </div>
+          <div
+            style={
+              Object {
+                "paddingTop": 10,
+              }
+            }
+          >
+            <div
+              className="fade alert alert-info show"
+              role="alert"
+            >
+              Staffs not allocated to a partner
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`The View Staff list renders as expected 1`] = `
+<table
+  className="table table-striped table-bordered table-hover"
+>
+  <thead>
+    <tr>
+      <th>
+        Name
+      </th>
+      <th>
+        Email
+      </th>
+      <th>
+        Action
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Calev
+      </td>
+      <td>
+        cbkavit@gmail.com
+      </td>
+      <td>
+        <button
+          className="btn btn-warning"
+          disabled={false}
+          onClick={[Function]}
+          style={
+            Object {
+              "paddingRight": 20,
+            }
+          }
+          type="button"
+        >
+          Edit
+        </button>
+        <button
+          className="btn btn-info"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Delete
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Caleb
+      </td>
+      <td>
+        cbkavit@gmail.com
+      </td>
+      <td>
+        <button
+          className="btn btn-warning"
+          disabled={false}
+          onClick={[Function]}
+          style={
+            Object {
+              "paddingRight": 20,
+            }
+          }
+          type="button"
+        >
+          Edit
+        </button>
+        <button
+          className="btn btn-info"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Delete
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        John
+      </td>
+      <td>
+        cbkavit@gmail.com
+      </td>
+      <td>
+        <button
+          className="btn btn-warning"
+          disabled={false}
+          onClick={[Function]}
+          style={
+            Object {
+              "paddingRight": 20,
+            }
+          }
+          type="button"
+        >
+          Edit
+        </button>
+        <button
+          className="btn btn-info"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Delete
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Jerry
+      </td>
+      <td>
+        cbkavit@gmail.com
+      </td>
+      <td>
+        <button
+          className="btn btn-warning"
+          disabled={false}
+          onClick={[Function]}
+          style={
+            Object {
+              "paddingRight": 20,
+            }
+          }
+          type="button"
+        >
+          Edit
+        </button>
+        <button
+          className="btn btn-info"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Delete
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Sera
+      </td>
+      <td>
+        cbkavit@gmail.com
+      </td>
+      <td>
+        <button
+          className="btn btn-warning"
+          disabled={false}
+          onClick={[Function]}
+          style={
+            Object {
+              "paddingRight": 20,
+            }
+          }
+          type="button"
+        >
+          Edit
+        </button>
+        <button
+          className="btn btn-info"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Delete
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Tui
+      </td>
+      <td>
+        cbkavit@gmail.com
+      </td>
+      <td>
+        <button
+          className="btn btn-warning"
+          disabled={false}
+          onClick={[Function]}
+          style={
+            Object {
+              "paddingRight": 20,
+            }
+          }
+          type="button"
+        >
+          Edit
+        </button>
+        <button
+          className="btn btn-info"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Delete
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Jane
+      </td>
+      <td>
+        cbkavit@gmail.com
+      </td>
+      <td>
+        <button
+          className="btn btn-warning"
+          disabled={false}
+          onClick={[Function]}
+          style={
+            Object {
+              "paddingRight": 20,
+            }
+          }
+          type="button"
+        >
+          Edit
+        </button>
+        <button
+          className="btn btn-info"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Delete
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Jack
+      </td>
+      <td>
+        cbkavit@gmail.com
+      </td>
+      <td>
+        <button
+          className="btn btn-warning"
+          disabled={false}
+          onClick={[Function]}
+          style={
+            Object {
+              "paddingRight": 20,
+            }
+          }
+          type="button"
+        >
+          Edit
+        </button>
+        <button
+          className="btn btn-info"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Delete
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Sam
+      </td>
+      <td>
+        cbkavit@gmail.com
+      </td>
+      <td>
+        <button
+          className="btn btn-warning"
+          disabled={false}
+          onClick={[Function]}
+          style={
+            Object {
+              "paddingRight": 20,
+            }
+          }
+          type="button"
+        >
+          Edit
+        </button>
+        <button
+          className="btn btn-info"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Delete
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Bob
+      </td>
+      <td>
+        cbkavit@gmail.com
+      </td>
+      <td>
+        <button
+          className="btn btn-warning"
+          disabled={false}
+          onClick={[Function]}
+          style={
+            Object {
+              "paddingRight": 20,
+            }
+          }
+          type="button"
+        >
+          Edit
+        </button>
+        <button
+          className="btn btn-info"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Delete
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
