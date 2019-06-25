@@ -23,10 +23,6 @@ const middlewares = jsonServer.defaults({
   static: "node_modules/json-server/dist"
 });
 
-sgMail.setApiKey(
-  "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"
-);
-
 // Set default middlewares (logger, static, cors and no-cache)
 server.use(middlewares);
 

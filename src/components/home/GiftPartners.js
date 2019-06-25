@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Container, Button, Table, Alert } from "react-bootstrap";
-import { toast } from "react-toastify";
+//import { toast } from "react-toastify";
 
-import { API_BASE_URL } from "../../config";
+//import { API_BASE_URL } from "../../config";
 
 const GiftPartners = ({
   assignGiftPartners,
@@ -16,11 +16,11 @@ const GiftPartners = ({
    * sendToAll sends an email to each of the participant,
    * informing who they are gifting to in the secret santa exchange
    */
-  const sendToAll = () => {
+  /*const sendToAll = () => {
     giftExchange.map(data => {
       sendEmailAlert(data.name, data.email, data.giftTo);
     });
-  };
+  };*/
 
   return (
     <Container style={{ padding: 20 }}>
@@ -65,7 +65,7 @@ const GiftPartners = ({
           <Button
             block
             onClick={() => {
-              sendToAll();
+              //sendToAll(); email disabled
               setDisableAssignButton(false);
               resetGiftExchange();
             }}
@@ -87,7 +87,7 @@ const GiftPartners = ({
  * sendEmailAlert calls an API that uses sendGrid to send emails.
  * The API server automatically starts with 'npm start'
  */
-const sendEmailAlert = (name, email, giftingTo) => {
+/*const sendEmailAlert = (name, email, giftingTo) => {
   return fetch(`${API_BASE_URL}send-email/`, {
     method: "POST",
     headers: {
@@ -109,7 +109,7 @@ const sendEmailAlert = (name, email, giftingTo) => {
       if (data.msg === "Sent") toast.success("Email sent.");
     })
     .catch(error => error.message);
-};
+};*/
 
 GiftPartners.propTypes = {
   assignGiftPartners: PropTypes.func.isRequired,

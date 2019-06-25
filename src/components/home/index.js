@@ -15,8 +15,8 @@ import {
 
 import ViewStaff from "./ViewStaff";
 import GiftPartners from "./GiftPartners";
-const VALID_DATA = 0;
-const INVALID_DATA = 1;
+export const VALID_DATA = 0;
+export const INVALID_DATA = 1;
 
 class Home extends React.Component {
   state = {
@@ -339,11 +339,13 @@ class Home extends React.Component {
     } else formValid.staffName = true;
 
     //check if staff does not already exist
-    const duplicateStaff = staff_data.filter(
-      user =>
-        user.name.toLowerCase() === staffName.toLowerCase() &&
-        user.email.toLowerCase() === emailAdd.toLowerCase()
-    );
+    const duplicateStaff = staff_data
+      ? staff_data.filter(
+          user =>
+            user.name.toLowerCase() === staffName.toLowerCase() &&
+            user.email.toLowerCase() === emailAdd.toLowerCase()
+        )
+      : undefined;
 
     //when editing staff, there can be one duplicate which is okay as the edited
     //data is stored on state when onChange method is called during editing.

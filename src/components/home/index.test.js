@@ -4,7 +4,7 @@ import renderer from "react-test-renderer";
 import { configure, shallow } from "enzyme";
 import ViewStaff from "./ViewStaff";
 import GiftPartners from "./GiftPartners";
-import Home from "./index";
+import Home, { VALID_DATA, INVALID_DATA } from "./index";
 
 configure({ adapter: new Adapter() });
 
@@ -46,6 +46,43 @@ describe("Main Page", () => {
 
     expect(tree).toMatchSnapshot();
   });
+  describe("Validate Staff", () => {
+    it("passing valid staff", () => {
+      const wrapper = shallow(<Home />);
+      //wrapper.setState({ staff_data: [] });
+
+      let response = wrapper
+        .instance()
+        .validateParticipantData("james", "cbkavit@gmail.com", false);
+      expect(response).toBe(VALID_DATA);
+    });
+    it("passing invalid staff name", () => {
+      const wrapper = shallow(<Home />);
+      //wrapper.setState({ staff_data: [] });
+
+      let response = wrapper
+        .instance()
+        .validateParticipantData("j", "cbkavit@gmail.com", false);
+      expect(response).toBe(INVALID_DATA);
+    });
+    it("passing invalid staff email", () => {
+      const wrapper = shallow(<Home />);
+      //wrapper.setState({ staff_data: [] });
+
+      let response = wrapper
+        .instance()
+        .validateParticipantData("james", "foo", false);
+      expect(response).toBe(INVALID_DATA);
+    });
+  });
+  it("should delete staff", () => {
+    const wrapper = shallow(<Home />);
+    wrapper.setState({ staff_data: test_staff_data });
+    wrapper.instance().handleDeleteParticipant(2);
+    expect(wrapper.state("staff_data").length).toEqual(
+      test_staff_data.length - 1
+    );
+  });
 });
 
 describe("The View Staff list", () => {
@@ -59,17 +96,6 @@ describe("The View Staff list", () => {
 
     expect(tree).toMatchSnapshot();
   });
-  /*it("should add staff to the listing", () => {
-    //expect(true).toEqual(true);
-    // home.state.staff_data = test_staff_data;
-    home.state({
-      staff_data: test_staff_data,
-      staffName: "Tim",
-      emailAdd: "cbkavit@gmail.com"
-    });
-    home.handleAddParticipant({ target: { value: "h" } });
-    expect(home.state.staff_data.length).toEqual(11);
-  });*/
 });
 
 describe("Assign Partner list", () => {
