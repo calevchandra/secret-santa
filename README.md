@@ -25,11 +25,3 @@ On the UI side, I mostly used react-bootstrap and normal css.
   Configuring email was not very straight forward as it required
   to create a JSON server within the React App so it could talk
   to the sendGrid email client.
-
-- **If I only had more time:**
-  Some of the things I would have done if I were to make this into production-quality code are:
-
-  1. Definitely would have spent more time doing automated tests as I feel, current ones are very shallow and I mostly did manual tests.
-  2. Have more user interaction and UI improvement by using a more sophisticated UI library like Ant Design instead of normal CSS and bootstrap.
-  3. Try not using any hard coding by doing lots of refactoring.
-  4. Make use of a standard, one store approach, for example, redux
